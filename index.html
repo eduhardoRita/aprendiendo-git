@@ -3,9 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Encuentra diferentes tipos de servicio automotriz de alta calidad y confianza">
+    <meta property="og:title" content="Servicio Automotriz Rapido y Confiable">
+    <meta property="og:image" content="https://cdn.buttercms.com/2pz3iaPETTCrI225tXHj">
+    <meta property="og:description" content="En nuestra pagina encontraras diferentes tipos servicio automotriz que tu vehiculo necesita">
+    <meta property="og:url" content="www.ServicioAutomotriz.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Servicio Automotriz</title>
 </head>
 <body>
-    <h1>Hello git</h1>
+    <header class="header">
+        <img src="./img/logo-mecanica.png" alt="logo de mecanica" class="main-logo">
+        <nav class="header__nav">
+            <a href="#">Inicio</a>
+            <a href="./blog/servicios.html">Servicios</a>
+            <a href="">Tienda de Refacciones</a>
+            <a href="">Asistencia Vial</a>
+            <a href="">Sobre Nosotros</a>
+            <a href="">Ayuda</a>
+        </nav>
+        <section class="header__icons">
+            <i><img src="./img/facebook.svg" alt="icono de facebook"></i>
+            <i><img src="./img/instagram.svg" alt="icono de instagram"></i>
+            <i><img src="./img/twitter.svg" alt="icono de twitter"></i>
+            <i class="header__icons--menu"><img src="./img/menu.svg" alt="icono de menu"></i>
+        </section>
+        <section class="header__menu menu-hide">
+            <h1>MENU</h1>
+            <section class="header__menu--option" id="search">
+                <i><img src="./img/search.svg" alt="icono de usuario para registro"></i>
+                <p>Buscar</p>
+            </section>
+            <section class="header__menu--option-two">
+                <i><img src="./img/user.svg" alt="icono inicio sesion"></i>
+                <p>Iniciar Sesion (clientes)</p>
+                <div id="container-inicio">
+                    <h2>Bienvenido</h2>
+                    <img src="./img/recepcion-sesion.png" alt="Recepcionista haciendo registro" class="inicio-sesion-close">
+                    <form>
+                        <div>
+                            <i><img src="./img/x.svg" alt="icono para cerrar"></i>
+                        </div>
+                        <div>
+                            <label for="name">Nombre de usuario:</label>
+                            <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre completo">
+                        </div>
+                        <div>
+                            <label for="contrasena">Contrasena:</label>
+                            <input type="text" id="contrasena" name="contrasena" required placeholder="Ingresa tu contrasena">
+                        </div>
+                        <div class="enter">
+                            <input type="submit">
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="header__menu--option">
+                <i><img src="./img/user-plus.svg" alt="icono de usuario para registro"></i>
+                <p>Registrarse</p>
+            </section>
+            <section class="header__menu--option">
+                <i><img src="./img/calendar.svg" alt="icono de usuario para registro"></i>
+                <p>Agendar cita</p>
+            </section>
+            <section class="header__menu--option">
+                <i><img src="./img/credit-card.svg" alt="icono de usuario para registro"></i>
+                <p>Realizar pago</p>
+            </section>
+            <section class="header__menu--option">
+                <i><img src="./img/trash-2.svg" alt="icono de usuario para registro"></i>
+                <p>Eliminar perfil</p>
+            </section>
+        </section>
+    </header>
+
+    <main class="main">
+        <article class="main__title">
+            <img src="./img/recepcion-taller.jpg" alt="recepcionista atendiendo amablemente">
+            <section>
+                <h1>SERVICIO AUTOMOTRIZ RAPIDO Y CONFIABLE</h1>
+                <i><b><p>Somos la mejor opcion si de velocidad se trata</p></b></i>
+            </section>
+        </article>
+        <article class="main__information">
+            <img src="./img/sello-calidad.png" alt="sello de calidad">
+            <section>
+                <h2>Calidad, Honestidad, Confianza, Limpeza y Puntualidad</h2>
+                <p> 
+                    Solucionamos fallas mecánicas preventivas y correctivas de manera fiable y duradera por medio de un equipo capacitado, que asesorará de manera profesional a cada cliente para que tome la mejor decisión sobre su vehículo.
+                </p>
+                <button>Agendar cita &#62;&#62;</button>
+            </section>
+        </article>
+        <article class="main__details">
+            <section class="main__details--title">
+                <h3>Conoce nuestros servicios</h3>
+            </section>
+            <section class="main__details--services">
+                <section>
+                    <div>
+                        <img src="./img/servicio-al-cliente.png" alt="servicio al cliente">
+                    </div>
+                    <h4>Atencion a clientes</h4>
+                    <p>Consulta el estado de tus órdenes de servicio.</p>
+                    <button>Ir</button>
+                </section>
+                <section>
+                    <div>
+                        <img src="./img/mecanico.png" alt="icono de mecanico">
+                    </div>
+                    <h4>Conoce a nuertro equipo</em></h4>
+                    <p>Contamos con los mejores especialistas capacitados para brindarte el mejor servicio</p>
+                    <button>Conocer</button>
+                </section>
+                <section>
+                    <div>
+                        <img src="./img/brazo-mecanico.png" alt="brazo mecanico">
+                    </div>
+                    <h4>Tecnologia de punta</h4>
+                    <p>Usamos la mejor tecnologia para revisar tu vehiculo</p>
+                    <button>Conocer</button>
+                </section>
+                <section>
+                    <div>
+                        <img src="./img/grua.png" alt="icono de grua">
+                    </div>
+                    <h4>Auxilio Vial</h4>
+                    <p>Si presentas inconvenientes en carretera, contamos con grua</p>
+                    <button>Conocer</button>
+                </section>
+            </section>
+        </article>
+        <aside>
+            <h3>Marcas que nos respaldan</h3>
+            <section>
+                <div>
+                    <a href="https://www.bridgestone.com.mx/" rel="sponsored"><img src="./img/bridgestone-mark.png" alt="marca bridgestone"></a>
+                </div>
+                <div>
+                    <a href="https://www.mobil.com.mx/es-mx" rel="nofollow"><img src="./img/mobil-mark.png" alt="marca mobil"></a></a>
+                </div>
+                <div>
+                    <a href="https://www.firestone.com.mx/" rel="nofollow"><img src="./img/firestone-mark.png" alt="marca firestone"></a>
+                </div>
+                <div>
+                    <a href="https://www.kyb.com.mx/" rel="nofollow"><img src="./img/kyb-mark.png" alt="marca kyb"></a>
+                </div>
+                <div>
+                    <a href="https://www.llantamania.com/product/fuzion-touring-9/" rel="nofollow"><img src="./img/fuzion-mark.webp" alt="marca fusion"></a>
+                </div>
+                <div>
+                    <a href="https://ngksparkplugs.com/en/" rel="nofollow"><img src="./img/ngk-mark.webp" alt="marca ngk"></a>
+                </div>
+            </section>
+        </aside>
+    </main>
+    <hr>
+    <footer class="footer">
+        <section class="footer__imgs">
+            <div>
+                <img src="./img/facebook.webp" alt="facebook">
+                <img src="./img/linkedin.webp" alt="linkedin">
+                <img src="./img/youtube.webp" alt="youtube">
+            </div>
+            <p>Speed Wheels &copy; 2023</p>
+            <small>Todos los derechos reservados</small>
+            <p><a href="">Política de Privacidad</a> &#124; <a href="">Política de Cookies</a></p>
+            <p><a href="">Términos y Condiciones</a></p>
+        </section>
+        <section class="footer__dates">
+            <div>
+                <h5>PRODUCTOS</h5>
+                <p>Analógico y señal mixta</p>
+                <p>Semiconductor Discreto</p>
+                <p>Lógico</p>
+                <p>Memoria</p>
+                <p>Optoelectrónica</p>
+                <p>Procesador y periféricos</p>
+            </div>
+            <div>
+                <h5>MERCADOS</h5>
+                <p>Aeroespacial y defensa</p>
+                <p>Automotriz</p>
+                <p>Industrial</p>
+                <p>Médico</p>
+                <p>Transporte</p>
+            </div>
+            <div>
+                <h5>SOLUCIONES</h5>
+                <p>Distribución autorizada</p>
+                <p>Fabricación con licencia</p>
+                <p>Diseño y replicación de productos</p>
+                <p>Procesado y almacenaje de obleas</p>
+                <p>Montaje</p>
+                <p>Servicios de pruebas</p>
+                <p>Confiabilidad</p>
+                <p>Archivado de IP</p>
+            </div>
+            <div>
+                <h5>ACERCA DE NOSOTROS</h5>
+                <p>Carreras profesionales</p>
+                <p>Distribuidores</p>
+                <p>Comuníquese con nosotros</p>
+                <p>Nuestras sedes</p>
+                <p>Asociaciones</p>
+                <p>Liderazgo</p>
+            </div>
+        </section>
+        <section class="footer__contact">
+            <h5>Contactenos &#124; Incribase al boletin de noticias</h5>
+        </section>
+    </footer>
+    <script src="./js/function.js" defer></script>
 </body>
 </html>
