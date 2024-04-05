@@ -31,7 +31,7 @@ body .header {
   }
 }
 body .header .main-logo {
-  width: 60px;
+  width: 40px;
 }
 @media screen and (max-width: 80em) {
   body .header .main-logo {
@@ -47,7 +47,7 @@ body .header .main-logo {
 body .header .header__nav {
   flex-grow: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media screen and (max-width: 80em) {
   body .header .header__nav {
@@ -97,9 +97,9 @@ body .header .header__icons i img {
 }
 body .header .header__menu {
   width: 30%;
-  height: 92%;
+  height: 95%;
   right: 0;
-  top: 61px;
+  top: 51px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -137,6 +137,15 @@ body .header .header__menu .header__menu--option-two {
   padding: 20px;
   gap: 30px;
   cursor: pointer;
+}
+body .header .header__menu .header__menu--option-two i img {
+  width: 30px;
+}
+body .header .header__menu .header__menu--option-two p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 0;
 }
 body .header .header__menu .header__menu--option-two #container-inicio {
   background-color: green;
@@ -180,7 +189,7 @@ body .header .header__menu .header__menu--option-two #container-inicio i img {
   width: 15px;
 }
 body .main {
-  margin-top: 130px;
+  margin-top: 100px;
 }
 @media screen and (max-width: 96.875em) {
   body .main {
@@ -202,7 +211,7 @@ body .main .main__title {
   flex-direction: row-reverse;
   width: 85%;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 30px;
   border: 1px solid #000000;
   padding: 10px;
   box-sizing: border-box;
