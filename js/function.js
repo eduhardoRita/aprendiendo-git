@@ -2,7 +2,6 @@ const iconMenu = document.querySelector(".header__icons--menu");
 const menu = document.querySelector(".header__menu");
 iconMenu.addEventListener("click", () => {
     menu.classList.toggle("menu-hide");
-    //menu.style.backgroundColor = "blue";
 });
 
 const search = document.getElementById("search");
@@ -27,3 +26,18 @@ inicioSesion.addEventListener("click", () => {
     containerInicio.style.display = "flex";
     console.log("click");
 })
+
+let showMenu = true;
+
+const closeMenu = document.querySelector(".close-menu");
+closeMenu.addEventListener("click", () => {
+    menu.classList.add("menu-hide");
+    showMenu = false; 
+});
+
+iconMenu.addEventListener("click", () => {
+    if (!showMenu) {
+        menu.classList.remove("menu-hide"); 
+        showMenu = true; 
+    }
+});
