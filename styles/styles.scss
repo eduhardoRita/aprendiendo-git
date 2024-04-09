@@ -44,11 +44,13 @@ body {
 
         @include tablets {
             background-color: #92a733;
+            height: 55px;
         }
 
         @include celphone {
             flex-direction: column;
             position: relative;
+            height: 100%;
         }
 
         .main-logo {
@@ -127,10 +129,42 @@ body {
             background-color: rgb(216, 46, 40);
             position: fixed;
 
+            @include tablets {
+                background-color: #92a733;
+                width: 40%;
+                top: 55px;
+                border-left: 2px solid #000000;
+            }
+
+            @include celphone {
+                left: 9.5%;
+                width: 80%;
+                height: 80%;
+                top: 15%;
+                border: 2px solid #000000;
+                background-color: #a52a2a;
+            }
+
+            .close-menu {
+                display: none;
+
+                @include celphone {
+                    display: block;
+                    position: absolute;
+                    right: 15px;
+                    top: 10px;
+                    width: 15px;
+                }
+            }
+
             h1 {
                 font-size: 2rem;
                 margin: 0;
                 padding: 0 20px;
+
+                @include tablets {
+                    font-size: 1.75rem;
+                }
             }
 
             .header__menu--option {
@@ -139,6 +173,10 @@ body {
                 padding: 20px;
                 gap: 30px;
                 cursor: pointer;
+
+                @include tablets {
+                    padding: 10px 20px;
+                }
             
                 i {
                     img {
@@ -165,6 +203,10 @@ body {
                 padding: 20px;
                 gap: 30px;
                 cursor: pointer;
+
+                @include tablets {
+                    padding: 10px 20px;
+                }
 
                 i {
                     img {
